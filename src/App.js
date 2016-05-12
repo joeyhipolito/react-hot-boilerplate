@@ -1,7 +1,10 @@
 import React, { Component } from 'react';
-import Layout from './Layout';
-import Counter from './Counter';
+import { Router, Route, browserHistory } from 'react-router'
+import routes from './routes'
+import store from './store'
+import { Provider } from 'react-redux'
 
+console.log('App evaluated')
 // If you use React Router, make this component
 // render <Router> with your routes. Currently,
 // only synchronous routes are hot reloaded, and
@@ -9,12 +12,15 @@ import Counter from './Counter';
 // You can ignore this warning. For details, see:
 // https://github.com/reactjs/react-router/issues/2182
 
-export default class App extends Component {
+class App extends Component {
   render() {
     return (
-      <Layout>
-        <Counter />
-      </Layout>
+      <Provider store={store}>
+        <Router routes={routes} history={browserHistory} />
+      </Provider>
     );
   }
 }
+
+
+export default App
