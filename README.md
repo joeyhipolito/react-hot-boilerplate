@@ -27,15 +27,13 @@ Component | Hot Loading
 SyncIndexRouteComponent | ✓
 SyncRouteComponent | ✓
 SyncRouteComponentChild | ✓
-SyncNonExportedComponent | ✓<sup>1</sup>
+SyncNonExportedComponent | ✓
 SyncReferenceModifiedComponent | ✗
 SyncAssignedComponent | ✓
 **Aync** |
 AsyncIndexRouteComponent | —
 AsyncRouteComponent | —
 AsyncRouteComponentChild | —
-
-<sup>1</sup>: only for non-exported component, not for exported component
 
 After manually remounting the components by changing routes back and forth all hot-updates were applied to components which ignored updates initially (marked with —).
 

@@ -33,7 +33,7 @@ const SyncExportedComponent = React.createClass({
   render() {
     return (
       <div>
-        <p>exporteed</p>
+        <p>exported</p>
         <SyncNonExportedComponent />
       </div>
     );
