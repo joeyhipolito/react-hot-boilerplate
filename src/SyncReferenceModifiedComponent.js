@@ -1,9 +1,9 @@
 import React from 'react';
 import { connect } from 'react-redux'
 
-console.log('SyncReassignedComponent evaluated')
+console.log('SyncReferenceModifiedComponent evaluated')
 
-let SyncReassignedComponent = React.createClass({
+let SyncReferenceModifiedComponent = React.createClass({
   getInitialState() {
     return { counter: 0 }
   },
@@ -24,11 +24,11 @@ let SyncReassignedComponent = React.createClass({
 
   render() {
     return (
-      <h1>SyncReassignedComponent ({this.state.counter})</h1>
+      <h1>SyncReferenceModifiedComponent ({this.state.counter})</h1>
     );
   }
 })
 
-SyncReassignedComponent = connect(() => ({}))(SyncReassignedComponent)
+SyncReferenceModifiedComponent = connect(() => ({}))(SyncReferenceModifiedComponent)
 
-export default SyncReassignedComponent
+export default SyncReferenceModifiedComponent

@@ -6,7 +6,7 @@ This fork's purpose is to checks how well react-hot-loader works with react-rout
 
 ## Compatibility Tables
 
-All tested components use `export default connect(..)(Component)`, except for the `SyncReassignedComponent`.
+All tested components use `export default connect(..)(Component)`, except for the `SyncReferenceModifiedComponent`.
 
 Legend:
 - ✓ = Keeps state after hot-load
@@ -28,7 +28,8 @@ SyncIndexRouteComponent | ✓
 SyncRouteComponent | ✓
 SyncRouteComponentChild | ✓
 SyncNonExportedComponent | ✓<sup>1</sup>
-SyncReassignedComponent | ✗
+SyncReferenceModifiedComponent | ✗
+SyncAssignedComponent | ✓
 **Aync** |
 AsyncIndexRouteComponent | —
 AsyncRouteComponent | —
