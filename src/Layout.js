@@ -18,6 +18,7 @@ function Layout({ children }) {
             <li><Link to="/sync/SyncNonExportedComponent" activeStyle={{ color: 'red' }}>SyncNonExportedComponent</Link></li>
             <li><Link to="/sync/SyncReferenceModifiedComponent" activeStyle={{ color: 'red' }}>SyncReferenceModifiedComponent</Link></li>
             <li><Link to="/sync/SyncAssignedComponent" activeStyle={{ color: 'red' }}>SyncAssignedComponent</Link></li>
+            <li><Link to="/sync/SyncModalComponent" activeStyle={{ color: 'red' }}>SyncModalComponent</Link></li>
           </ul>
         </li>
         <li>

@@ -3,6 +3,7 @@ import SyncIndexRouteComponent from './SyncIndexRouteComponent';
 import SyncRouteComponent from './SyncRouteComponent';
 import SyncRouteComponentChild from './SyncRouteComponentChild';
 import SyncNonExportedComponent from './SyncNonExportedComponent';
+import SyncModalComponent from './SyncModalComponent';
 import SyncReferenceModifiedComponent from './SyncReferenceModifiedComponent';
 import SyncAssignedComponent from './SyncAssignedComponent';
 import Layout from './Layout'
@@ -38,6 +39,10 @@ export default {
         {
           path: 'SyncAssignedComponent',
           component: SyncAssignedComponent,
+        },
+        {
+          path: 'SyncModalComponent',
+          component: SyncModalComponent,
         },
       ],
     },
