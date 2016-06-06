@@ -8,8 +8,9 @@ import SyncReferenceModifiedComponent from './SyncReferenceModifiedComponent';
 import SyncAssignedComponent from './SyncAssignedComponent';
 import SyncComposedComponent from './SyncComposedComponent';
 import Layout from './Layout'
+import refEqualRootRoute from './refEqualRootRoute'
 
-export default {
+export default Object.assign(refEqualRootRoute, {
   component: Layout,
   path: '/',
   childRoutes: [
@@ -78,4 +79,4 @@ export default {
       }
     }
   ]
-}
+})

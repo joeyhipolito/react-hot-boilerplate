@@ -28,7 +28,7 @@ const SyncComposedComponent = React.createClass({
 
   render() {
     return (
-      <h1>SyncComposedComponent! ({this.state.counter})</h1>
+      <h1>SyncComposedComponent ({this.state.counter})</h1>
     );
   }
 })
