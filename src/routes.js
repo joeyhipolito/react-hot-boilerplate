@@ -6,6 +6,7 @@ import SyncNonExportedComponent from './SyncNonExportedComponent';
 import SyncModalComponent from './SyncModalComponent';
 import SyncReferenceModifiedComponent from './SyncReferenceModifiedComponent';
 import SyncAssignedComponent from './SyncAssignedComponent';
+import SyncComposedComponent from './SyncComposedComponent';
 import Layout from './Layout'
 
 export default {
@@ -43,6 +44,10 @@ export default {
         {
           path: 'SyncModalComponent',
           component: SyncModalComponent,
+        },
+        {
+          path: 'SyncComposedComponent',
+          component: SyncComposedComponent,
         },
       ],
     },
